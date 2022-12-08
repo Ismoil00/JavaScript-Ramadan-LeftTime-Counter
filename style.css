@@ -1,0 +1,77 @@
+/* || Import */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+/* || Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(/images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+  color: rgb(91, 72, 100);
+  text-align: center;
+}
+
+/* || Main Section */
+.timerH1 {
+  padding-top: 80px;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  text-align: center;
+}
+
+.timerContainer {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.timerContainer h2 {
+  width: 100px;
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: -15px;
+}
+
+/* || Screen Acordance */
+@media (max-width: 700px) {
+  .timerH1 {
+    letter-spacing: 15px;
+    font-size: 2rem;
+  }
+
+  .timerContainer h2 {
+    width: 50px;
+    font-size: 2rem;
+  }
+
+  .timerContainer span {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .timerH1 {
+    letter-spacing: 15px;
+    font-size: 1.5rem;
+    padding: 50px 10px 0 10px;
+  }
+
+  .timerContainer h2 {
+    width: 50px;
+    font-size: 1.5rem;
+  }
+
+  .timerContainer span {
+    font-size: 0.6rem;
+  }
+}
